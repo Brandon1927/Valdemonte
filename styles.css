@@ -94,6 +94,7 @@ nav ul li:hover > .sub-menu {
 /* Efecto hover al pasar el mouse */
 .card:hover {
   transform: translateY(-10px);           /* Levanta la tarjeta al pasar el mouse */
+  cursor: pointer;
 }
 
 /* Estilo de la imagen de la tarjeta */
