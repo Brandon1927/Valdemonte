@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: #F4F1EA;
+}
+
+nav{
+    
+    background: #D7C9B6;
+    padding: 30px 20px;
+}
+
+nav ul{
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li a{
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Mostrar submenú cuando se pasa el mouse */
+nav ul li:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background: #ada293;
+    border-radius: 20px;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.sub-menu li{
+    padding: 8px 20px;
+}
+
+.sub-menu li a{
+    font-weight: normal;
+    color: white;
+}
+
+.sub-menu li a:hover{
+    background-color: #555;
+}
+
+/* --------------------------------- */
+
+/* Estilo general de las tarjetas */
+.card-container {
+    display: grid;                          /* Usamos Grid para distribuir las tarjetas */
+    grid-template-columns: repeat(3, 300px); /* 3 columnas de 300px */
+    gap: 20px;                              /* Espacio de 20px entre las tarjetas */
+    justify-items: center;                  /* Centra las tarjetas horizontalmente */
+    align-items: center;                    /* Centra las tarjetas verticalmente */
+}
+
+.card {
+    position: relative;
+    top: 20%;
+    left: 60%;
+  width: 300px;                           /* Ancho fijo de la tarjeta */
+  border: 1px solid #ccc;                 /* Borde gris claro */
+  border-radius: 10px;                    /* Bordes redondeados */
+  overflow: hidden;                       /* Para que los bordes no sobresalgan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  font-family: Arial, sans-serif;         /* Fuente para el texto */
+  background-color: #fff;                 /* Fondo blanco */
+  transition: transform 0.3s ease;         /* Transición suave al pasar el mouse */
+}
+
+/* Efecto hover al pasar el mouse */
+.card:hover {
+  transform: translateY(-10px);           /* Levanta la tarjeta al pasar el mouse */
+}
+
+/* Estilo de la imagen de la tarjeta */
+.card-img {
+  width: 100%;                            /* La imagen ocupa todo el ancho de la tarjeta */
+  height: 200px;                          /* Altura fija para la imagen */
+  object-fit: cover;                      /* Ajusta la imagen para cubrir el área */
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+  padding: 15px;                          /* Espaciado interno */
+  text-align: center;                     /* Centra el contenido dentro de la tarjeta */
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+  font-size: 1.2em;                       /* Tamaño de fuente del título */
+  margin: 10px 0;                         /* Espaciado arriba y abajo del título */
+  color: #333;                            /* Color gris oscuro */
+}
+
+/* Estilo para el precio de la tarjeta */
+.card-price {
+  font-size: 1.1em;                       /* Tamaño de fuente del precio */
+  color: #2a9d8f;                         /* Color verde */
+  font-weight: bold;                      /* Negrita */
+}
