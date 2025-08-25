@@ -1,59 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Valdemonte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Tempo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li class="submenu"><a href="#">Productos</a>
-        <ul class="sub-menu">
-          <li><a href="#">Producto blanco</a></li>
-          <li><a href="#">Producto negro</a></li>
-          <li><a href="#">Producto 3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
+    <!-- Menu -->
+    <!-- <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav> -->
 
-  <!-- Contenedor para las tarjetas -->
-  <div class="card-container">
-    <!-- Tarjeta 1 -->
-    <div class="card">
-      <img src="./img/camisa 1.webp" alt="Imagen de producto" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">Producto 1</h3>
-        <p class="card-price">$29.99</p>
-      </div>
+    <nav class="navbar navbar-expand-sm" style="background-color: #C6A15B ;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #C6A15B ;">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search"  style="background-color: #927643;"/>
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 500px;">
+            <img src="./img/1356.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="max-height: 500px;">
+            <img src="./img/510.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" style="max-height: 500px;">
+            <img src="./img/794.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <!-- Tarjeta 2 -->
-    <div class="card">
-      <img src="./img/camisa 2.png" alt="Imagen de producto" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">Producto 2</h3>
-        <p class="card-price">$49.99</p>
-      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+    crossorigin="anonymous"></script>
+
+    <!-- Ejemplo -->
+
+    <div class="container-fluid py-5 text-center" style="background-color: #C6A15B ;">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2 text-dark">1</div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-dark">2</div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-dark">3</div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-dark">4</div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-dark">5</div>
+            <div class="col-sm-6 col-md-4 col-lg-2 text-dark">6</div>
+        </div>
     </div>
 
-    <!-- Tarjeta 3 -->
-    <div class="card">
-      <img src="./img/camisa 3.webp" alt="Imagen de producto" class="card-img">
-      <div class="card-body">
-        <h3 class="card-title">Producto 3</h3>
-        <p class="card-price">$19.99</p>
-      </div>
+    <!-- Acerca de -->
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Acerca de:</h2>
+        <div class="row">
+            <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptates reprehenderit omnis, eaque nesciunt, quo sint beatae recusandae 
+                blanditiis dolore minima quam magnam ratione odio ipsa maxime cumque ad facere hic.</div>
+            <div class="col-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptates reprehenderit omnis, eaque nesciunt, quo sint beatae recusandae 
+                blanditiis dolore minima quam magnam ratione odio ipsa maxime cumque ad facere hic.
+                <br><br>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-light">Warning</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <!-- Cards verticales -->
+    <div class="container mt-5 d-none d-md-block">
+        <h2 class="text-center mb-5">Tarjeta vertical</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border-0 m-4 rounded-5 rounded-top-pill" style="background: #C6A15B ;">
+                    <img src="./img/27881.jpg" class="card-img-top rounded-circle" style="max-height: 300px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 m-4 rounded-5 rounded-top-pill" style="background: #C6A15B ;">
+                    <img src="./img/27881.jpg" class="card-img-top rounded-circle" style="max-height: 300px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 m-4 rounded-5 rounded-top-pill" style="background: #C6A15B ;">
+                    <img src="./img/27881.jpg" class="card-img-top rounded-circle" style="max-height: 300px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 m-4 rounded-5 rounded-top-pill" style="background: #C6A15B ;">
+                    <img src="./img/27881.jpg" class="card-img-top rounded-circle" style="max-height: 300px;" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards horizontales -->
+    <div class="container d-none d-md-block">
+        <h2 class="text-center mb-5">Tarjeta horizontal</h2>
+        <div class="card mb-3 rounded-5 border-0">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="./img/510.jpg" class="img-fluid rounded-start-5" alt="..." style="max-height: 400px;">
+                </div>
+                <div class="col-md-7 rounded-end-5" style="background-color: #C6A15B ;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 d-none d-md-block">
+        <h2 class="text-center mb-5">Tarjeta horizontal</h2>
+        <div class="card mb-3 rounded-5 border-0">
+            <div class="row g-0">
+                <div class="col-md-7 rounded-start-5" style="background-color: #C6A15B ;">
+                    <div class="card-body">
+                        <h2 class="card-title">Card title</h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-dark">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="./img/510.jpg" class="img-fluid rounded-end-5" alt="..." style="max-height: 500px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container-fluid mt-5 p-5 text-center" style="background-color: #C6A15B;">
+            <div class="row">
+                <div class="col"><a href="#" class="text-decoration-none text-dark"><i class="bi bi-facebook"></i> Facebook</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-dark"><i class="bi bi-whatsapp"></i> Whatsapp</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-dark"><i class="bi bi-instagram"></i> Instagram</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-dark"><i class="bi bi-threads"></i> Threads</a></div>
+                <div class="col"><a href="#" class="text-decoration-none text-dark"><i class="bi bi-tiktok"></i> Tik tok</a></div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
